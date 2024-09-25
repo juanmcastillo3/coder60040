@@ -1,0 +1,29 @@
+.columna {
+    margin: 20px; 
+  }
+  
+  .card {
+    background-color: #333; 
+    color: white; 
+  }
+  
+  .card-title,
+  .card-text {
+    text-align: center; 
+    font-size: 1.25rem; 
+    margin-bottom: 1rem;
+  }
+  .card-price {
+    color: white; 
+  }
+  
+  .card-buttons .btn {
+    background-color: #e9af0e; 
+    color: black; 
+    border: none; 
+  }
+  
+  .card-buttons .btn:hover {
+    background-color: #d8a70d; 
+  }
+  

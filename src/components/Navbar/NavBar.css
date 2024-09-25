@@ -1,0 +1,50 @@
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+a#basic-nav-dropdown,
+.carrito {
+	color: white;
+}
+
+.carrito {
+	position: relative;
+}
+
+span.badge {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: blue;
+	color: white;
+	font-size: 12px;
+	padding: 5px 10px;
+	border-radius: 100%;
+	transform: translate(70%, 10%);
+}
+
+.navbar-custom {
+	background-color: black !important; /* Asegúrate de que el negro se aplique */
+	color: white; /* Cambia el color del texto a blanco */
+  }
+
+  .navbar-custom {
+	background-color: black !important; /* Fondo negro */
+	color: white; /* Texto blanco */
+  }
+  
+  .navbar-custom .nav-link {
+	color: white; /* Color del texto de los enlaces */
+	transition: color 0.3s; /* Transición suave para el hover */
+  }
+  
+  .navbar-custom .nav-link:hover {
+	color: #e9af0e; /* Color del texto en hover */
+  }
+  
+  .navbar-custom .dropdown-item:hover {
+	background-color: #e9af0e; /* Color de fondo en hover para los items del dropdown */
+  }
+  
+  .navbar-custom {
+    font-family: 'Lobster', cursive; /* Cambia a la fuente que elegiste */
+    font-size: 1.2rem; /* Ajusta el tamaño según sea necesario */
+}
