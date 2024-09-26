@@ -23,7 +23,7 @@ const NavBar = () => {
               <NavDropdown.Divider />
               <Link to="/category/ensaladas" className="dropdown-item">Ensaladas</Link>
               <NavDropdown.Divider />
-              <Link to="/category/snacks" className="dropdown-item">Snacks</Link>
+              <Link to="/category/acompañamientos" className="dropdown-item">Acompañamientos</Link>
             </NavDropdown>
             <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
           </Nav>
