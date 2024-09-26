@@ -9,7 +9,7 @@ import './CardItems.css';
 function CardItems(props) {
   return (
     <Col className="columna">
-    <Card style={{ width: "18rem", maxHeight: "450px" }}> 
+    <Card style={{ width: "22rem", maxHeight: "450px" }}> 
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title> 
