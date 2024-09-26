@@ -3,9 +3,19 @@
   }
   
   .card {
-    background-color: #333; 
-    color: white; 
+    max-height: 450px; 
+    overflow: hidden; 
   }
+
+  .card-img-top {
+    height: 150px; 
+    object-fit: cover; 
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
   
   .card-title,
   .card-text {
