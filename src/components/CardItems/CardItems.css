@@ -15,7 +15,8 @@
   .card-body {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between; 
+    justify-content: space-between;
+  }
   
   .card-title,
   .card-text {
