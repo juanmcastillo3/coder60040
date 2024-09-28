@@ -7,7 +7,7 @@ const CartWidget = () => {
 
   return (
     <div className="cart-widget">
-      <FaShoppingCart size="3rem" />
+      <FaShoppingCart size="2.5rem" />
       <span className="cart-notification">{cartItems}</span>
     </div>
   );

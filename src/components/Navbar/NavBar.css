@@ -22,29 +22,29 @@ span.badge {
 }
 
 .navbar-custom {
-	background-color: black !important; /* Asegúrate de que el negro se aplique */
-	color: white; /* Cambia el color del texto a blanco */
+	background-color: black !important; 
+	color: white; 
   }
 
   .navbar-custom {
-	background-color: black !important; /* Fondo negro */
-	color: white; /* Texto blanco */
+	background-color: black !important; 
+	color: white; 
   }
   
   .navbar-custom .nav-link {
-	color: white; /* Color del texto de los enlaces */
-	transition: color 0.3s; /* Transición suave para el hover */
+	color: white; 
+	transition: color 0.3s; 
   }
   
   .navbar-custom .nav-link:hover {
-	color: #e9af0e; /* Color del texto en hover */
+	color: #e9af0e; 
   }
   
   .navbar-custom .dropdown-item:hover {
-	background-color: #e9af0e; /* Color de fondo en hover para los items del dropdown */
+	background-color: #e9af0e; 
   }
   
   .navbar-custom {
-    font-family: 'Lobster', cursive; /* Cambia a la fuente que elegiste */
-    font-size: 1.2rem; /* Ajusta el tamaño según sea necesario */
-}
+    font-family: 'Lobster', cursive; 
+    font-size: 1.2rem; 
+  }

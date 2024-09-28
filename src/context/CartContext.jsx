@@ -7,7 +7,7 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(0); 
 
   const addToCart = () => {
-    setCartItems((prevItems) => prevItems + 1);
+    setCartItems(cartItems + 1); 
   };
 
   return (

@@ -57,7 +57,7 @@ function ItemDetailed(props) {
                 variant="primary"
                 size="lg"
                 className="w-100 d-flex align-items-center justify-content-center"
-                onClick={() => addToCart()} 
+                onClick={() => addToCart(product)} 
               >
                 <h6>
                   <FaShoppingCart size="1rem" className="me-2" />

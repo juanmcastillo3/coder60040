@@ -3,8 +3,7 @@ import products from "../Products/products";
 import { useParams } from "react-router-dom";
 import Spinner from "./Loading";
 import ItemDetailed from "./ItemDetailed";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function DetailedCard() {
 	const [data, SetData] = useState([]);
