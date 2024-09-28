@@ -16,3 +16,13 @@ button.btn.btn-outline-primary {
 	width: 100%;
 	justify-content: center;
 }
+
+.category-text {
+	font-size: 1rem; 
+	font-style: oblique; 
+  }
+  
+.name-text{
+	font-size: 2rem; 
+	font-weight: bold; 
+}

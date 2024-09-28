@@ -1,40 +1,47 @@
-.columna {
-    margin: 20px; 
-  }
-  
-  .card {
-    max-height: 600px; 
-    overflow: hidden; 
-  }
+.card {
+  max-height: 600px;
+  overflow: hidden;
+}
 
-  .card-img-top {
-    height: 150px; 
-    object-fit: cover; 
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-  }
-  
-  .card-title,
-  .card-text {
-    text-align: center; 
-    font-size: 1.25rem; 
-    margin-bottom: 1rem;
-  }
-  .card-price {
-    color: white; 
-  }
-  
-  .card-buttons .btn {
-    background-color: #e9af0e; 
-    color: black; 
-    border: none; 
-  }
-  
-  .card-buttons .btn:hover {
-    background-color: #d8a70d; 
-  }
-  
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title,
+.card-text {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.card-price {
+  color: black;
+}
+
+.card-buttons .btn {
+  background-color: #e9af0e;
+  color: black;
+  border: none;
+}
+
+.card-buttons .btn:hover {
+  background-color: #d8a70d;
+}
+
+.card-buttons .btn.clicked {
+  background-color: black;
+  color: white;
+}

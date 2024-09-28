@@ -18,7 +18,7 @@ const ItemListContainer = () => {
             const filteredProducts = products.filter((product) => 
                 product.category.toLowerCase() === idCategory.toLowerCase()
             );
-            fetchSimulation(filteredProducts, 2000)
+            fetchSimulation(filteredProducts, 1000)
                 .then((response) => {
                     setData(response);
                     setLoading(false); 
@@ -28,7 +28,7 @@ const ItemListContainer = () => {
                     setLoading(false); 
                 });
         } else {
-            fetchSimulation(products, 2000)
+            fetchSimulation(products, 1000)
                 .then((response) => {
                     setData(response);
                     setLoading(false); 

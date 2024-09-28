@@ -27,7 +27,7 @@ function DetailedCard() {
 			<>
 				<ItemDetailed
 					key={item.id}
-					nombre={item.title}
+					name={item.title}
 					description={item.description}
 					imagen={item.imagen}
 					category={item.category}

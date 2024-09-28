@@ -48,16 +48,16 @@ function ItemDetailed(props) {
         <Card style={{ width: "22rem" }}>
           <Card.Img variant="top" src={product.image} />
           <Card.Body>
-            <Card.Title>{props.name}</Card.Title>
-            <Card.Text>{props.category}</Card.Text>
+            <Card.Title className="name-text">{product.name}</Card.Title>
+            <Card.Text className="category-text">{props.category}</Card.Text>
             <Card.Text>{props.description}</Card.Text>
-            <h6 className="card-price">{props.precio}</h6>
+            <h4 className="card-price">{props.precio}</h4>
             <div className="card-buttons">
               <Button
-                variant="primary"
+                variant="warning"
                 size="lg"
                 className="w-100 d-flex align-items-center justify-content-center"
-                onClick={() => addToCart(product)} 
+                onClick={() => addToCart(product)}
               >
                 <h6>
                   <FaShoppingCart size="1rem" className="me-2" />
