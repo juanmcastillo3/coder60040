@@ -1,5 +1,5 @@
 .card {
-  max-height: 600px;
+  max-height: 700px;
   overflow: hidden;
 }
 
@@ -43,5 +43,21 @@
 
 .card-buttons .btn.clicked {
   background-color: black;
-  color: white;
+  color: rgb(5, 5, 5);
 }
+
+.card-price {
+  padding: 0.6em 1em;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.card-price:hover {
+  transform: scale(1.1) rotate(2deg);
+  background-color: #d8a70d;
+  color: white;
+ }
+
