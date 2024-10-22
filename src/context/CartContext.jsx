@@ -4,14 +4,44 @@ import PropTypes from "prop-types";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState(0); 
+  const [cart, setCart] = useState([]);
 
-  const addToCart = () => {
-    setCartItems(cartItems + 1); 
+  const isInCart = (id) => {
+    return cart.some((item) => item.id === id);
+  };
+
+  const addItem = (item, quantity) => {
+    if (isInCart(item.id)) {
+      setCart(
+        cart.map((product) =>
+          product.id === item.id
+            ? { ...product, quantity: product.quantity + quantity }
+            : product
+        )
+      );
+    } else {
+      setCart([...cart, { ...item, quantity }]);
+    }
+  };
+
+  const removeItem = (itemId) => {
+    setCart(cart.filter((item) => item.id !== itemId));
+  };
+
+  const clear = () => {
+    setCart([]);
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart }}>
+    <CartContext.Provider
+      value={{
+        cart,
+        addItem,
+        removeItem,
+        clear,
+        isInCart,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

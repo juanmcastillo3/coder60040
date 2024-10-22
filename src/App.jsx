@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItemDetailed from "./components/CardItems/DetailedCardContainer.jsx";
 import Contact from "./components/Contacto/Contacto.jsx";
+import Cart from "./components/Cart/Cart.jsx";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/category/:idCategory" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailed />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </CartProvider>
     </BrowserRouter>

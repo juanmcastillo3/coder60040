@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -9,10 +9,25 @@ import './CardItems.css';
 import { CartContext } from "../../context/CartContext"; 
 
 function CardItems(props) {
-  const { addToCart } = useContext(CartContext); 
+  const { addItem } = useContext(CartContext); 
+  const [quantity, setQuantity] = useState(1); 
 
   const handleAddToCart = () => {
-    addToCart(props);
+    const productToAdd = { 
+      id: props.id,
+      name: props.name,
+      image: props.image,
+      price: props.precio,
+      quantity: quantity, 
+    };
+    addItem(productToAdd, quantity); 
+  };
+
+  const handleQuantityChange = (e) => {
+    const newQuantity = parseInt(e.target.value, 10);
+    if (newQuantity > 0) {
+      setQuantity(newQuantity);
+    }
   };
 
   return (
@@ -22,9 +37,17 @@ function CardItems(props) {
         <Card.Body>
           <Card.Title>{props.name}</Card.Title> 
           <div className="card-buttons">
-            <Link className="btn btn-warning btn-lg button-content"  to={`/item/${props.id}`}>
+            <Link className="btn btn-warning btn-lg button-content" to={`/item/${props.id}`}>
               Ver más
             </Link>
+            <input 
+              type="number" 
+              value={quantity} 
+              min="1" 
+              onChange={handleQuantityChange} 
+              className="quantity-input"
+              style={{ width: "60px", marginRight: "10px" }}
+            />
             <Button variant="outline-warning" onClick={handleAddToCart}> 
               <h6>
                 <FaShoppingCart size="1rem" />

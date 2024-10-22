@@ -23,15 +23,13 @@ import snack3 from '../../assets/snak3.png';
 import snack4 from '../../assets/snak4.png';
 import snack5 from '../../assets/snak5.png';
 
-
-
 const products = [
   {
     id: 1,
     name: "Mega Bacon Dev",
     category: "Hamburguesas",
     description: "Doble hamburguesa, doble cheddar, doble panceta, cebolla caramelizada y ketchup",
-    price: "$ 1200",
+    price: 1200, // Cambiado a número
     image: ham1
   },
   {
@@ -39,7 +37,7 @@ const products = [
     name: "Java Hamburguer",
     category: "Hamburguesas",
     description: "Queso pategrás, tomates frescos, escabeche de jalapeño y guacamole",
-    price: "$ 1150",
+    price: 1150, // Cambiado a número
     image: ham2
   },
   {
@@ -47,7 +45,7 @@ const products = [
     name: "Jabarscript Hamburguer",
     category: "Hamburguesas",
     description: "Queso danbo, huevo a la plancha, jamón cocido, cebolla a la plancha y mayonesa de oliva",
-    price: "$ 1300",
+    price: 1300, // Cambiado a número
     image: ham3
   },
   {
@@ -55,7 +53,7 @@ const products = [
     name: "Syntax Error Hamburguer",
     category: "Hamburguesas",
     description: "Queso reggianito, batata frita, sarza (cebolla, limón, jalapeño, cilantro) y salsa Huancaína",
-    price: "$ 1250",
+    price: 1250, // Cambiado a número
     image: ham4
   },
   {
@@ -63,7 +61,7 @@ const products = [
     name: "C++ Hamburguer",
     category: "Hamburguesas",
     description: "Queso ahumado, guacamole, aros de cebolla, rúcula, lechuga capuchina y mostaza dulce",
-    price: "$ 1280",
+    price: 1280, // Cambiado a número
     image: ham5
   },
   {
@@ -71,7 +69,7 @@ const products = [
     name: "Algorithms Dev",
     category: "Hamburguesas",
     description: "Queso azul, cebolla caramelizada, rúcula y mayonesa de berenjena",
-    price: "$ 1350",
+    price: 1350, // Cambiado a número
     image: ham6
   },
   {
@@ -79,7 +77,7 @@ const products = [
     name: "StackOverFlow Hamburguer",
     category: "Hamburguesas",
     description: "Doble hamburguesa, doble cheddar, pepinos en pickle, cebolla, lechuga capuchina y salsa Gran Dev",
-    price: "$ 1320",
+    price: 1320, // Cambiado a número
     image: ham7
   },
   {
@@ -87,7 +85,7 @@ const products = [
     name: "Visual Hamburguer Code",
     category: "Hamburguesas",
     description: "Queso danbo, tomate, lechuga capuchina, pepinos en pickle, cebolla blanca y mostaneza",
-    price: "$ 1240",
+    price: 1240, // Cambiado a número
     image: ham8
   },
   {
@@ -95,7 +93,7 @@ const products = [
     name: "Intellij Hamburguer",
     category: "Hamburguesas",
     description: "Queso cheddar, huevo a la plancha, panceta, fideos moñito con cheddar y salsa barbacoa",
-    price: "$ 1360",
+    price: 1360, // Cambiado a número
     image: ham9
   },
   {
@@ -103,7 +101,7 @@ const products = [
     name: "Sublime Hamburguer",
     category: "Hamburguesas",
     description: "Queso mozzarella, tomates asados, salchicha parrillera y pesto de albahaca",
-    price: "$ 1400",
+    price: 1400, // Cambiado a número
     image: ham10
   },
   {
@@ -111,7 +109,7 @@ const products = [
     name: "Slack",
     category: "Hamburguesas",
     description: "Queso cheddar, panceta ahumada, pepinos en pickle y ketchup Dev",
-    price: "$ 1150",
+    price: 1150, // Cambiado a número
     image: ham11
   },
   {
@@ -119,7 +117,7 @@ const products = [
     name: "Bootstrap Hamburguer",
     category: "Hamburguesas",
     description: "Queso ahumado, rúcula, menta, pickle de hongos de pino y mayonesa de merken",
-    price: "$ 1260",
+    price: 1260, // Cambiado a número
     image: ham12
   },
   {
@@ -127,7 +125,7 @@ const products = [
     name: "Wordpress Hamburguer",
     category: "Hamburguesas",
     description: "Queso parmesano, ajos confitados, rúcula, mollejas a la plancha y mayonesa de lima y cilantro",
-    price: "$ 1380",
+    price: 1380, // Cambiado a número
     image: ham13
   },
   {
@@ -135,7 +133,7 @@ const products = [
     name: "GitHub Hamburguer",
     category: "Hamburguesas",
     description: "Tomates secos, cebolla frita, rúcula, mozzarella y alioli",
-    price: "$ 1300",
+    price: 1300, // Cambiado a número
     image: ham14
   },
   {
@@ -143,7 +141,7 @@ const products = [
     name: "Notepad Hamburguer ++",
     category: "Hamburguesas",
     description: "Sánguche de pechuga de pollo frita, panceta ahumada, lechuga capuchina y tártara Dev",
-    price: "$ 1290",
+    price: 1290, // Cambiado a número
     image: ham15
   },
   {
@@ -151,7 +149,7 @@ const products = [
     name: "PHamburguerP",
     category: "Hamburguesas",
     description: "Queso provoleta con chimichurri, morcilla, morrón a la plancha, cebolla roja y ketchup ahumado",
-    price: "$ 1250",
+    price: 1250, // Cambiado a número
     image: ham16
   },
   {
@@ -159,7 +157,7 @@ const products = [
     name: "Script Hamburguer",
     category: "Hamburguesas",
     description: "Queso pategrás, tomates marinados, lechuga capuchina y alioli",
-    price: "$ 1210",
+    price: 1210, // Cambiado a número
     image: ham17
   },
   {
@@ -167,7 +165,7 @@ const products = [
     name: "Ensalada SQL",
     category: "Ensaladas",
     description: "Lechuga capuchina, panceta ahumada, croutones, queso parmesano, pechuga de pollo y nuestro aderezo Caesar",
-    price: "$ 950",
+    price: 950, // Cambiado a número
     image: ensalada1
   },
   {
@@ -175,7 +173,7 @@ const products = [
     name: "Ensalada MongoDB",
     category: "Ensaladas",
     description: "Mix de verdes, queso ahumado, queso cheddar, huevo duro, guacamole, tomates asados y salsa de morrón",
-    price: "$ 900",
+    price: 900, // Cambiado a número
     image: ensalada2
   },
   {
@@ -183,7 +181,7 @@ const products = [
     name: "Strings",
     category: "Acompañamientos",
     description: "Aros de cebolla acompañados con Barbacoa Blanca",
-    price: "$ 650",
+    price: 650, // Cambiado a número
     image: snack1
   },
   {
@@ -191,7 +189,7 @@ const products = [
     name: "ABM de pollo",
     category: "Acompañamientos",
     description: "Dados de pollo supremas marinadas en 11 especias y mayo vieja escuela",
-    price: "$ 700",
+    price: 700, // Cambiado a número
     image: snack2
   },
   {
@@ -199,7 +197,7 @@ const products = [
     name: "Data Structure con cheddar",
     category: "Acompañamientos",
     description: "Papas fritas con tempero, queso cheddar, panceta y cebolla de verdeo",
-    price: "$ 600",
+    price: 600, // Cambiado a número
     image: snack3
   },
   {
@@ -207,7 +205,7 @@ const products = [
     name: "Trellos de espinaca",
     category: "Acompañamientos",
     description: "Espinaca, queso reggianito y alioli",
-    price: "$ 700",
+    price: 700, // Cambiado a número
     image: snack4
   },
   {
@@ -215,7 +213,7 @@ const products = [
     name: "React Dev",
     category: "Acompañamientos",
     description: "Papas fritas con crema de quesos, salchicha parrillera y cebolla de verdeo",
-    price: "$ 800",
+    price: 800, // Cambiado a número
     image: snack5
   },
 ];

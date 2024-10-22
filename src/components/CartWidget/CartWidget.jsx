@@ -1,15 +1,26 @@
-import { useContext } from 'react';
-import { CartContext } from '../../context/CartContext.jsx';
-import { FaShoppingCart } from 'react-icons/fa';
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
 const CartWidget = () => {
-  const { cartItems } = useContext(CartContext); 
+  const { cart } = useContext(CartContext);
+
+  
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+  
+  if (totalItems === 0) {
+    return null; 
+  }
 
   return (
-    <div className="cart-widget">
-      <FaShoppingCart size="2.5rem" />
-      <span className="cart-notification">{cartItems}</span>
-    </div>
+    <Link to="/cart">
+      <div className="cart-widget">
+        <FaShoppingCart />
+        {totalItems > 0 && <span className="item-count">{totalItems}</span>}
+      </div>
+    </Link>
   );
 };
 
