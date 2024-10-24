@@ -24,9 +24,9 @@
 }
 
 .cart-widget {
-  position: relative;
+  position: relative;;
   right: 10px;
-  background-color: #00FFFF; 
+  background-color: #e9af0e;
   color: black;
   padding: 8px 12px;
   border-radius: 20px; 

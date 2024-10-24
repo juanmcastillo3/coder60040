@@ -1,40 +1,48 @@
-import FetchSimulation from "../../FetchSimulation";
-import products from "../Products/products";
 import { useParams } from "react-router-dom";
 import Spinner from "./Loading";
 import ItemDetailed from "./ItemDetailed";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import products from "../Products/products"; // Importa el archivo de productos local
+import { CartContext } from "../../context/CartContext"; 
 
-function DetailedCard() {
-	const [data, SetData] = useState([]);
-	const { id } = useParams();
-	console.log(id);
+function ItemDetailContainer() {
+    const [data, setData] = useState(null); // Producto específico
+    const { id } = useParams();
+    const { addItem } = useContext(CartContext);
 
-	useEffect(() => {
-		SetData([]);
-		FetchSimulation(
-			products.filter((filtered) => filtered.id == id),
-			2000
-		)
-			.then((response) => SetData(response))
-			.catch((error) => console.log(error));
-	}, [id]);
+    useEffect(() => {
+        const fetchProduct = () => {
+            const product = products.find((p) => p.id === parseInt(id)); // Buscar el producto por id
+            if (product) {
+                setData(product);
+            } else {
+                console.error("No se encontró el producto");
+            }
+        };
 
-	return data.length === 0 ? (
-		<Spinner />
-	) : (
-		data.map((item) => (
-			<>
-				<ItemDetailed
-					key={item.id}
-					name={item.title}
-					description={item.description}
-					imagen={item.imagen}
-					category={item.category}
-					precio={item.price}
-				/>
-			</>
-		))
-	);
+        fetchProduct();
+    }, [id]);
+
+    // Si el producto no se ha cargado, mostrar el spinner
+    if (!data) {
+        return <Spinner />;
+    }
+
+    const handleAddToCart = (quantity) => {
+        addItem(data, quantity);
+    };
+
+    return (
+        <ItemDetailed
+            key={data.id}
+            name={data.name}
+            description={data.description}
+            imagen={data.image}
+            category={data.category}
+            precio={data.price}
+            onAddToCart={handleAddToCart}
+        />
+    );
 }
-export default DetailedCard;
+
+export default ItemDetailContainer;
