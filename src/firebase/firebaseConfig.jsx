@@ -7,13 +7,13 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAfwOHbPNvwTR3Tf7FAOsJ2qVnBxBnEIAY",
+  apiKey: [import.meta.env.VITE_API_KEY],
   authDomain: "jabar-script.firebaseapp.com",
   projectId: "jabar-script",
   storageBucket: "jabar-script.appspot.com",
-  messagingSenderId: "156885978989",
-  appId: "1:156885978989:web:751f6a2709e9d6e9771464",
-  measurementId: "G-Z1084J40EN"
+  messagingSenderId: [import.meta.env.VITE_MESSAGINGSENDERID],
+  appId: [import.meta.env.VITE_APP_ID],
+  measurementId: [import.meta.env.VITE_MEASUREMENT_ID]
 };
 
 // Initialize Firebase

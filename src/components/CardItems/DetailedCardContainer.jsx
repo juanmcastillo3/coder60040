@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Spinner from "./Loading";
 import ItemDetailed from "./ItemDetailed";
 import { useState, useEffect, useContext } from "react";
-import products from "../Products/products"; // Importa el archivo de productos local
+import products from "../../products/products.js"
 import { CartContext } from "../../context/CartContext"; 
 
 function ItemDetailContainer() {

@@ -25,7 +25,6 @@ const NavBar = () => {
               <NavDropdown.Divider />
               <Link to="/category/acompañamientos" className="dropdown-item">Acompañamientos</Link>
             </NavDropdown>
-            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

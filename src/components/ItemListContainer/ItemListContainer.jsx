@@ -1,7 +1,7 @@
 import "./ItemListContainer.css";
 import fetchSimulation from "../../FetchSimulation";
 import CardItems from "../CardItems/CardItems";
-import products from "../Products/products";
+import products from "../../products/products";
 import Container from "react-bootstrap/Container";
 import { Spinner } from "react-bootstrap";
 import { useState, useEffect } from "react";

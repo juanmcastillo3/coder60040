@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import { Button, Container, Row, Spinner, InputGroup, FormControl } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
 import "./ItemDetailed.css";
-import products from "../Products/products.js";
+import products from "../../products/products";
 import { CartContext } from "../../context/CartContext";
 
 function ItemDetailed(props) {
