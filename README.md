@@ -19,16 +19,16 @@ Clonar el repositorio:
 
 ```bash
 git clone https://github.com/juanmcastillo3/coder60040
-
+```
 Instalar las dependencias:
-bash
-Copiar código
+```bash
 npm install
+```
 Ejecutar el servidor de desarrollo:
-bash
-Copiar código
+```bash
 npm run dev
-Dependencias Utilizadas
+```
+Dependencias Utilizadas:
 bootstrap
 firebase
 react
