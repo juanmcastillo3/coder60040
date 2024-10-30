@@ -4,7 +4,6 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer.
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItemDetailed from "./components/CardItems/DetailedCardContainer.jsx";
-import Contact from "./components/Contacto/Contacto.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 
 
